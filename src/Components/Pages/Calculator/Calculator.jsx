@@ -3,7 +3,7 @@ import Calculate from "./DoMath";
 
 function Display() {
   return (
-    <div>
+    <div className="main">
       <h3>Here is my calculator page:</h3>
       <Calculate num1={3} num2={5} operation={"add"} />
     </div>

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./styles.css";
 import Heading from "./Components/Heading";
-import Navbar from "./Components/Navbar";
-import SetPage from "./Components/Main";
+import Navbar, { st } from "./Components/Navbar";
+import SetPage from "./Components/SetPage";
 import Footer from "./Components/Footer";
 
 // You can also use "import * as Object from ./Components/main" to get everything
@@ -10,9 +10,9 @@ import Footer from "./Components/Footer";
 // generally not good practice though.
 
 function App() {
-  let currentState = useState(1),
-    Main;
-  Main = SetPage(currentState);
+  const currentState = useState(2);
+  console.log("Current state set as " + currentState[0]);
+  let Main = SetPage(currentState[0]);
   return (
     <div>
       <Heading />

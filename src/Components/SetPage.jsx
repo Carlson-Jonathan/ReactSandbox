@@ -5,9 +5,9 @@ import Vanilla from "./Pages/ArrowFunctions";
 
 let pageToExport;
 
-function SetPage(state) {
-  console.log("Current state = " + state[0]);
-  switch (state[0]) {
+function SetPage(page) {
+  console.log("Received state change = " + page);
+  switch (page) {
     case 1:
       pageToExport = Calc;
       break;

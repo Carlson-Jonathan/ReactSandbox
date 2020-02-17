@@ -47,7 +47,7 @@ function ShowNumber(displayArray, index) {
 
 function ShowAllNumbers() {
   return (
-    <div>
+    <div className="main">
       <br />
       Your array is... {arrayToDisplay.map(ShowNumber)}
     </div>
