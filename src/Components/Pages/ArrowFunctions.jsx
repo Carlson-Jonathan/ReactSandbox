@@ -15,8 +15,8 @@ const modifiedArray = someArray.map(function(num) {
 });
 
 // Alternative (optional) syntax 1 for declaring anonymous functions:
-const alternateArray1 = someArray.map((num, index) => {
-  return <p key={index}>{num * 3}</p>;
+const alternateArray1 = someArray.map(num => {
+  return num * 3;
 });
 
 // Alternative syntax 2 for declaring anonymous functions:
@@ -27,23 +27,31 @@ const alternateArray2 = someArray.map(num => num * 4);
 // traditional for readability.
 
 /******************* Display everything to the HTML output ******************/
-let example, displayArray;
-example = 3; // Select which array you want to display
+let example, arrayToDisplay;
 
-if (example === 1) displayArray = modifiedArray;
-else if (example === 2) displayArray = alternateArray1;
-else if (example === 3) displayArray = alternateArray2;
+// Select which array you want to display
+example = 2;
 
-function ShowNumber(displayArray) {
+if (example === 1) arrayToDisplay = modifiedArray;
+else if (example === 2) arrayToDisplay = alternateArray1;
+else if (example === 3) arrayToDisplay = alternateArray2;
+
+// Note: the index and key is to eliminate a warning only.
+function ShowNumber(displayArray, index) {
   return (
-    <div>
+    <div key={index}>
       <p style={{ float: "left" }}>{displayArray},&nbsp;</p>
     </div>
   );
 }
 
 function ShowAllNumbers() {
-  return <div>{alternateArray1}</div>;
+  return (
+    <div>
+      <br />
+      Your array is... {arrayToDisplay.map(ShowNumber)}
+    </div>
+  );
 }
 
 export default ShowAllNumbers;

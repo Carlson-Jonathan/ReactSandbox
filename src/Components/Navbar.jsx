@@ -1,8 +1,4 @@
-import React from "react";
-
-function highlight(navItem) {
-  document.getElementById(navItem).color = "orange";
-}
+import React, { useState } from "react";
 
 function Navbar() {
   return (
@@ -17,4 +13,3 @@ function Navbar() {
 }
 
 export default Navbar;
-export { highlight };
