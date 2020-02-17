@@ -7,7 +7,5 @@ import React from "react";
 import ReactDom from "react-dom";
 import App from "./App";
 
-var root = document.getElementById("root");
-
 // Syntax: ReactDom.render(What to display, where to display it (what element));
-ReactDom.render(<App />, root);
+ReactDom.render(<App />, document.getElementById("root"));

@@ -42,6 +42,22 @@ li:hover {
   margin: 0 10%;
 }
 
+input,
+select {
+  margin: 20px 10px 0;
+}
+
+.card {
+  background-color: yellow;
+  width: 150px;
+  display: inline-block;
+  margin: 20px;
+  padding: 0 30px;
+  border: black solid 4px;
+  border-radius: 25px;
+  box-shadow: grey 10px 10px;
+}
+
 .footer {
   position: fixed;
   bottom: 0;

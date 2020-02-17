@@ -1,10 +1,14 @@
 import React from "react";
 
+function highlight(navItem) {
+  document.getElementById(navItem).color = "orange";
+}
+
 function Navbar() {
   return (
     <ul className="navBox">
-      <li className="navItem">Nav1</li>
-      <li className="navItem">Nav2</li>
+      <li className="navItem">Home</li>
+      <li className="navItem">Calculator</li>
       <li className="navItem">Nav3</li>
       <li className="navItem">Nav4</li>
       <li className="navItem">Nav5</li>
@@ -13,3 +17,4 @@ function Navbar() {
 }
 
 export default Navbar;
+export { highlight };
