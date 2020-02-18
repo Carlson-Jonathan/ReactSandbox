@@ -10,17 +10,32 @@ import Footer from "./Components/Footer";
 // generally not good practice though.
 
 function App() {
-  const currentState = useState(2);
-  console.log("Current state set as " + currentState[0]);
-  let Main = SetPage(currentState[0]);
+  const [state, setState] = useState(0);
+  console.log("Current state set as " + state);
+
+  function handleStateChange(newState) {
+    setState(newState);
+  }
+
+  let Main = SetPage(state);
   return (
-    <div>
+    <React.Fragment>
       <Heading />
-      <Navbar />
+      <Navbar changeState={handleStateChange} />
       <Main />
       <Footer />
-    </div>
+    </React.Fragment>
   );
 }
 
 export default App;
+
+/******************************************************************************
+ * Note on how to pass states between components:
+ *  1.) Set your "useState" variable - const [state, setState] = useState(0).
+ *  2.) Make a container function for the setState function.
+ *  3.) Pass the container as a prop to the component changing the state.
+ *  4.) From the component, call the function "props.changeState(#)"
+ * While you could just pass the "setState" as a prop, it is generally good
+ * practice to create a container function so you can include other thing later.
+ ******************************************************************************/
