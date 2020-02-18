@@ -1,12 +1,11 @@
 import Calc from "./Pages/Calculator/Calculator";
 import Home from "./Pages/Home";
 import People from "./Pages/People/People";
-import Vanilla from "./Pages/ArrowFunctions";
+import Arrows from "./Pages/ArrowFunctions";
 
 let pageToExport;
 
 function SetPage(page) {
-  console.log("Received state change = " + page);
   switch (page) {
     case 1:
       pageToExport = Calc;
@@ -15,10 +14,10 @@ function SetPage(page) {
       pageToExport = People;
       break;
     case 3:
-      pageToExport = Vanilla;
+      pageToExport = Arrows;
       break;
     // case 4:
-    //   pageToExport = States;
+    //   pageToExport = newPage;
     //   break;
     default:
       pageToExport = Home;

@@ -5,6 +5,7 @@
 
 body {
   margin: 0;
+  font-family: arial;
 }
 
 main {
@@ -56,6 +57,26 @@ select {
   border: black solid 4px;
   border-radius: 25px;
   box-shadow: grey 10px 10px;
+}
+
+.code {
+  color: yellow;
+  background-color: darkblue;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+button {
+  height: 30px;
+  width: 80px;
+  border-radius: 10px;
+  background-color: yellow;
+  color: maroon;
+  margin: 0 20px;
 }
 
 .footer {

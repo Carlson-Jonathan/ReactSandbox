@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css";
 import Heading from "./Components/Heading";
-import Navbar, { st } from "./Components/Navbar";
+import Navbar from "./Components/Navbar";
 import SetPage from "./Components/SetPage";
 import Footer from "./Components/Footer";
 
@@ -11,7 +11,6 @@ import Footer from "./Components/Footer";
 
 function App() {
   const [state, setState] = useState(0);
-  console.log("Current state set as " + state);
 
   function handleStateChange(newState) {
     setState(newState);

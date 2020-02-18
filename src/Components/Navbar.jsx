@@ -1,5 +1,4 @@
 import React from "react";
-import SetPage from "./SetPage";
 
 function Navbar(props) {
   return (
