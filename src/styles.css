@@ -20,6 +20,10 @@ h1 {
   padding: 15px;
 }
 
+p {
+  text-align: justify;
+}
+
 .navBox {
   list-style: none;
   text-align: center;

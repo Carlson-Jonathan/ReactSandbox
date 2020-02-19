@@ -2,6 +2,7 @@ import Calc from "./Pages/Calculator/Calculator";
 import Home from "./Pages/Home";
 import People from "./Pages/People/People";
 import Arrows from "./Pages/ArrowFunctions";
+import Time from "./Pages/Counter";
 
 let pageToExport;
 
@@ -16,9 +17,9 @@ function SetPage(page) {
     case 3:
       pageToExport = Arrows;
       break;
-    // case 4:
-    //   pageToExport = newPage;
-    //   break;
+    case 4:
+      pageToExport = Time;
+      break;
     default:
       pageToExport = Home;
       break;
