@@ -7,16 +7,19 @@ function Navbar(props) {
         Home
       </li>
       <li onClick={() => props.changeState(2)} className="navItem">
-        People
+        Props
       </li>
       <li onClick={() => props.changeState(3)} className="navItem">
         Arrows
       </li>
       <li onClick={() => props.changeState(4)} className="navItem">
-        Counter
+        setInterval( )
       </li>
       <li onClick={() => props.changeState(1)} className="navItem">
-        Calculator
+        Forms
+      </li>
+      <li onClick={() => props.changeState(5)} className="navItem">
+        PrevValue
       </li>
     </ul>
   );

@@ -84,8 +84,8 @@ function ShowAllNumbers() {
         within another anonymos function (something to do with JSON strings):
       </p>
       <ul className="code">
-        &lt;button onClick=&#123;{" "}
-        <span style={{ color: "red", fontWeight: "900" }}>( ) =></span>{" "}
+        &lt;button onClick=&#123;
+        <span style={{ color: "red", fontWeight: "900" }}>( ) =></span>
         callBack( param ) &#125; &gt; Button Name &lt;/button&gt;
       </ul>
       <hr />

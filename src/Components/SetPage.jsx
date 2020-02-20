@@ -1,29 +1,13 @@
-import Calc from "./Pages/Calculator/Calculator";
+import Calc from "./Pages/Calculator";
 import Home from "./Pages/Home";
 import People from "./Pages/People/People";
 import Arrows from "./Pages/ArrowFunctions";
 import Time from "./Pages/Counter";
-
-let pageToExport;
+import PrevValue from "./Pages/PrevValue";
 
 function SetPage(page) {
-  switch (page) {
-    case 1:
-      pageToExport = Calc;
-      break;
-    case 2:
-      pageToExport = People;
-      break;
-    case 3:
-      pageToExport = Arrows;
-      break;
-    case 4:
-      pageToExport = Time;
-      break;
-    default:
-      pageToExport = Home;
-      break;
-  }
+  const pages = [Home, Calc, People, Arrows, Time, PrevValue];
+  const pageToExport = pages[page];
   return pageToExport;
 }
 
