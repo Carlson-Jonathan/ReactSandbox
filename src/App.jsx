@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./styles.css";
-import Heading from "./Components/Heading";
 import Navbar from "./Components/Navbar";
 import SetPage from "./Components/SetPage";
 import Footer from "./Components/Footer";
@@ -17,9 +16,9 @@ function App() {
   }
 
   let Main = SetPage(state);
+
   return (
     <React.Fragment>
-      <Heading />
       <Navbar changeState={handleStateChange} />
       <Main />
       <Footer />

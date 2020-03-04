@@ -16,8 +16,8 @@ var days = [
 var months = [
   "Jan.",
   "Feb.",
-  "March.",
-  "April.",
+  "March",
+  "April",
   "May",
   "June",
   "July",
