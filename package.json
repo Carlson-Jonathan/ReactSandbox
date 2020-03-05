@@ -1,10 +1,11 @@
 {
-  "name": "my-first-react",
+  "name": "news-feeds",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "axios": "0.19.2",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-scripts": "3.0.1"

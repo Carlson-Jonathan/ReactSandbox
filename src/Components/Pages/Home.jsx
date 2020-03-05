@@ -1,28 +1,26 @@
 import React from "react";
 
-var someVariable = "JS variables can be inserted into HTML using curly braces.";
-
 function Main() {
   return (
-    <div className="main">
-      <h3>General things to know about React:</h3>
+    <main>
+      <h3>Sub Heading</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sem
+        ligula, tristique vel diam vel, feugiat facilisis leo. Proin ultrices
+        leo eu imperdiet pretium. Phasellus fermentum ut lacus non placerat.
+        Praesent diam mauris, fringilla a dolor a, dictum bibendum orci. Duis eu
+        risus molestie, varius est non, lacinia risus. Praesent sollicitudin
+        odio quis ipsum hendrerit, ut maximus nunc sodales. Nam vel est non est
+        sagittis aliquam. Nullam vulputate metus quam, quis pharetra ligula
+        vulputate eu
+      </p>
+      <h3>Sub Heading</h3>
       <ul>
-        <li>
-          &lt;Tag&gt;&lt;/Tag&gt; is the same as &lt;Tag /&gt; (only when
-          empty).
-        </li>
-        <li>Component file names have ".jsx" extentions.</li>
-        <li>You can import files with or without their extension.</li>
-        <li>{someVariable} (see this line of code)</li>
-        <li>
-          When declaring CSS classes, use "className=" instead of just "class=".
-        </li>
-        <li>
-          The primary purpose of the index.js file is to start your program. Use
-          the App.jsx files to pull all of your stuff together.
-        </li>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
       </ul>
-    </div>
+    </main>
   );
 }
 

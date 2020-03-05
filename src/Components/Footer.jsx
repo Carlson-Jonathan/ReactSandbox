@@ -3,12 +3,12 @@ import Time from "./Fragments/Time";
 
 function Footer() {
   return (
-    <p className="footer">
+    <footer>
       &copy; Jonathan Carlson 2020 | Huntsville, Alabama | Agile Decision
       Sciences
       <br />
       <Time />
-    </p>
+    </footer>
   );
 }
 
